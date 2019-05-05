@@ -1,0 +1,671 @@
+$pinked: #ed145b
+
+*
+	box-sizing: border-box
+	font-size: 10px
+body
+	font-family: 'Lato', sans-serif
+	overflow-x: hidden
+
+
+// Reset and adaptive
+
+input:focus, button:focus
+	outline: none
+img.fluid
+	max-width: 100%
+	height: auto
+
+.fix_top
+	position: fixed
+	font-size: 32px
+	background-color: #fea100
+	right: 30px
+	bottom: 50px
+	font-weight: 900
+	color: $pinked
+	cursor: pointer
+	padding: 10px 20px
+	z-index: 5000
+	border-radius: 10px
+	transition: all 0.3s
+	display: none
+	&:hover
+		background-color: $pinked
+		color: #fea100
+
+.btn
+	color: #fff
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 1.6rem
+	padding: 2rem 6rem
+	background-color: $pinked
+	display: inline-block
+	border-radius: 4rem
+	text-decoration: none
+	transition: all 0.4s
+	&:hover
+		background-color: darken($pinked, 15)
+
+.header
+	color: #fff	
+	background: #333 url('../img/header_bg.jpg') center no-repeat
+	background-size: cover
+	padding-top: 3.5rem
+	height: 100vh
+	min-height: 630px
+	&_nav
+		ul
+			list-style-type: none
+			display: flex
+			width: 100%
+			li
+				margin-right: 2rem
+				a
+					font-size: 1.6rem
+					transition: .3s
+					text-decoration: none
+					color: #fff
+					font-weight: 700
+					&:hover
+						color: $pinked
+	&_main
+		text-align: center
+		padding-top: 15rem
+		h1
+			font-weight: 300
+			font-size: 4.6rem
+			text-transform: uppercase
+			letter-spacing: 1px
+			margin: 0
+			span
+				font-weight: 900
+				font-size: 4.6rem
+			&::after
+				content: ''
+				display: block
+				width: 20.5rem
+				height: 2px
+				background-color: $pinked
+				margin-left: auto
+				margin-right: auto
+				margin-top: 3.5rem
+				margin-bottom: 3.5rem
+		p
+			margin: 0
+			font-size: 2.2rem
+			margin-bottom: 10px
+	.btn
+		margin-top: 7rem
+
+.power
+	background: #f0f0f0 url('../img/ccv.jpg') center top -45px no-repeat
+	background-size: cover
+	padding-top: 14rem
+	padding-bottom: 6rem
+	position: relative
+	&_info
+		color: #5a5a5a
+		h2
+			font-size: 3.8rem
+			font-weight: 400
+			font-style: italic
+			margin: 0
+			&:after
+				content: ''
+				display: block
+				width: 20rem
+				height: 2px
+				background-color: $pinked
+				margin-top: 3rem
+				margin-bottom: 3rem
+		a
+			text-transform: uppercase
+			font-size: 1.6rem
+			display: inline-block
+			color: $pinked
+			vertical-align: middle
+			text-decoration: none
+			margin-top: 2rem
+			img
+				vertical-align: middle
+				margin-left: 20px
+				transform: translateY(-2px)
+
+		p
+			font-size: 1.5rem
+			line-height: 1.8
+			margin-top: 0
+	&_img
+		position: absolute
+		top: -26rem
+
+
+.service
+	padding: 10rem 0
+	text-align: center
+	h2
+		font-size: 3.8rem
+		font-weight: 400
+		font-style: italic
+		margin: 0
+		&:after
+			content: ''
+			display: block
+			width: 20rem
+			height: 2px
+			background-color: $pinked
+			margin: 3rem auto
+	&_info
+		width: 69rem
+		font-size: 1.6rem
+		line-height: 1.8
+		margin: auto
+		margin-bottom: 8rem
+	&_item
+		p
+			text-transform: uppercase
+			color: $pinked
+			font-weight: 300
+			font-size: 1.4rem
+			margin-top: 3rem
+
+
+.test
+	padding: 9rem 0
+	background: #333 url('../img/test_bg.jpg') center no-repeat
+	background-size: cover
+	text-align: center
+	p
+		font-size: 2.4rem
+		font-style: italic
+		color: #ccc
+		font-weight: 300
+	&_top
+		margin: auto
+		margin-bottom: 5rem
+
+	&_bot
+		margin: auto
+		margin-top: 5rem
+	&_item
+		padding: 2rem 0
+		position: relative
+
+
+.price
+	text-align: center
+	padding: 9rem 0
+	background-color: #f0f0f0
+	color: #333
+	.btn
+		margin-top: 2rem
+		cursor: pointer
+		padding-left: 0
+		padding-right: 0
+		width: 19rem
+	&_info
+		font-size: 1.6rem
+		line-height: 2
+		width: 68rem
+		margin: auto
+		margin-bottom: 9rem
+	h2
+		font-size: 3.8rem
+		font-weight: 400
+		font-style: italic
+		margin: 0
+		&:after
+			content: ''
+			display: block
+			width: 20rem
+			height: 2px
+			background-color: $pinked
+			margin: 3rem auto
+	&_it
+		background-color: #fff
+		padding-bottom: 3rem
+		margin-bottom: 4rem
+		.active
+			background-color: $pinked
+		ul
+			padding: 0
+			list-style-type: none
+			text-align: center
+			padding-top: 6rem
+			li
+				margin-bottom: 25px
+				font-weight: 300
+				font-size: 16px
+	&_top
+		background-color: #5a5a5a
+		color: #fff
+		padding: 35px 0
+		padding-bottom: 0
+		font-weight: 900
+		p
+			font-size: 1.5rem
+		h4
+			font-weight: 900
+			font-size: 5rem
+			span
+				font-size: 2rem
+		h4, p
+			margin: 0
+	&_name
+		font-size: 1.6rem
+		text-transform: uppercase
+		background-color: #f0f0f0
+		color: #333
+		display: inline-block
+		padding: 2rem 0
+		border-radius: 30px
+		transform: translateY(3rem)
+		width: 19rem
+
+
+.features
+	padding-top: 9rem
+	padding-bottom: 3rem
+	&_img
+		img
+			width: 50px
+	&_item
+		margin-bottom: 60px
+	&_flex
+		display: flex
+		align-items: flex-start
+	&_info
+		margin-left: 20px
+		h5
+			text-transform: uppercase
+			font-size: 1.6rem
+			margin: 0
+			color: $pinked
+			margin-bottom: 1rem
+		p
+			color: #666
+			margin: 0
+			font-size: 1.4rem
+			line-height: 1.6
+			font-weight: 300
+
+.became
+	padding: 6rem 0
+	background-color: $pinked
+	h2
+		color: #fff
+		font-size: 3.8rem
+		text-transform: uppercase
+		font-weight: 300
+		span
+			font-size: 4rem
+			font-weight: 900
+	&_button
+		width: 100%
+		border: none
+		background-color: #fff
+		padding: 15px
+		text-transform: uppercase
+		font-size: 16px
+		color: $pinked
+		border-radius: 30px
+		cursor: pointer
+		transition: all 0.4s
+		&:hover
+			background-color: purple
+
+
+.portfolio
+	padding-top: 9rem
+	padding-bottom: 6rem
+	color: #333
+	&_hidden
+		display: none
+	&_info
+		font-size: 1.6rem
+		line-height: 2
+		width: 68rem
+		margin: auto
+		margin-bottom: 9rem
+		text-align: center
+	h2
+		font-size: 3.8rem
+		font-weight: 400
+		font-style: italic
+		text-align: center
+		margin: 0
+		&:after
+			content: ''
+			display: block
+			width: 20rem
+			height: 2px
+			background-color: $pinked
+			margin: 3rem auto
+
+.portfolio
+	&_item
+		width: 36rem
+		margin: 3rem 0
+	&_hover
+		width: 36rem
+		height: 25rem
+		display: block
+		background-size: cover
+		cursor: pointer
+		position: relative
+		overflow: hidden
+		transition: all 0.5s
+		&_1
+			background: #555 url('../img/port1.jpg') center no-repeat
+		&_2
+			background: #555 url('../img/port2.jpg') center no-repeat
+		&_3
+			background: #555 url('../img/port3.jpg') center no-repeat
+		&_4
+			background: #555 url('../img/port4.jpg') center no-repeat
+		&_5
+			background: #555 url('../img/port5.jpg') center no-repeat
+		&_6
+			background: #555 url('../img/port6.jpg') center no-repeat
+		&:hover .portfolio_search
+			left: 0
+		&:hover::after
+			bottom: -20px
+		&::after
+			content: ' '
+			display: block
+			position: absolute
+			background-color: #fea100
+			bottom: 0
+			width: 100%
+			transition: all 2s
+			height: 10px
+	&_search
+		height: 100%
+		width: 100%
+		background-color: rgba($pinked, 0.6)
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		left: 100%
+		transition: 0.5s
+	&_text
+		padding: 2.5rem 2rem
+		background-color: #f0f0f0
+		color: #666
+		p
+			margin: 0
+			font-size: 1.5rem
+			line-height: 2
+		h5
+			margin: 0
+			font-size: 1.6rem
+			text-transform: uppercase
+			font-weight: 300
+			margin-bottom: 2rem
+	&_btn
+		text-transform: uppercase
+		font-size: 16px
+		color: $pinked
+		background-color: transparent
+		text-align: center
+		display: block
+		margin: auto
+		cursor: pointer
+		border: none
+		position: relative
+		&::after
+			content: ''
+			display: block
+			width: 100px
+			height: 1px
+			background-color: $pinked
+			position: absolute
+			top: -5px
+			transform: scale(0)
+			transition: all 0.4s
+		&:hover::after
+			transform: scale(1)
+		img
+			display: block
+			margin: 10px auto
+
+.show
+	text-align: center
+	color: #fff
+	background: url('../img/header_bg.jpg') center no-repeat
+	background-size: cover
+	padding: 12rem 0
+	position: relative
+	z-index: 5
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-image: radial-gradient(transparent, rgba(50, 80, 120, 0.3))
+		z-index: -1
+	h2
+		font-size: 4.8rem
+		font-weight: 400
+		font-style: italic
+		text-align: center
+		margin: 0
+		&:after
+			content: ''
+			display: block
+			width: 20rem
+			height: 2px
+			background-color: $pinked
+			margin: 3rem auto
+	p
+		font-size: 1.6em
+		font-weight: 300
+		margin: auto
+		line-height: 2
+	.btn
+		margin-top: 5rem
+
+
+.share
+	position: relative
+	padding: 7.5rem 0
+	background-color: #f0f0f0
+	color: #666
+	h2
+		font-size: 3.8rem
+		font-weight: 400
+		font-style: italic
+		margin: 0
+		&:after
+			content: ''
+			display: block
+			width: 20rem
+			height: 2px
+			background-color: $pinked
+			margin: 3rem 0
+	p
+		font-size: 1.5rem
+		line-height: 1.8
+		margin-top: 0
+	img
+		position: absolute
+		left: -200px
+
+	.btn
+		width: 200px
+		padding-left: 0
+		padding-right: 0
+		text-align: center
+		margin-top: 4rem
+	&_all
+		padding-top: 5rem
+
+
+.footer
+	background-color: #2b2b2b
+	color: #fff
+	text-transform: uppercase
+	padding: 6rem 0
+	p
+		margin: 0
+		font-size: 18px
+		text-transform: uppercase
+		font-weight: 300
+		span
+			font-weight: 900
+			color: red
+			font-size: 18px
+
+
+// _________SLIDER________________
+.slick-dots li button:before
+	background-color: #fea100
+	content: ''
+	border-radius: 50%
+	top: 35px
+	width: 15px
+	height: 15px
+.slick-active
+	outline: none !important
+.slick-slide
+	outline: none !important
+.slider-arrow
+	height: 100%
+	position: absolute
+	height: 45px
+	width: 25px
+	cursor: pointer
+	transition: all 0.4s
+	&:hover
+		opacity: 0.6
+	&_left
+		background: url('../img/arrow_left.png') center no-repeat
+		top: 50%
+		left: -25px
+	&_right
+		background: url('../img/arrow_right.png') center no-repeat
+		right: -25px
+		top: 50%
+
+
+// __________________MEDIA
+
+@media(max-width: 1199.98px)
+	.became
+		h2
+			font-size: 3rem
+			span
+				font-size: 3rem
+	.share
+		img
+			left: -400px
+	.portfolio_item
+		display: block
+		margin-left: auto
+		margin-right: auto
+
+@media(max-width: 991.98px)
+	*
+		font-size: 9px
+	.became
+		text-align: center
+		h2
+		&_button
+			width: 320px
+	.share img
+		display: none
+
+@media(max-width: 767.98px)
+	*
+		font-size: 8px
+	.power
+		&_info
+			text-align: center
+			h2
+				padding: 0 2rem
+				&::after
+					display: block
+					margin: 3rem auto
+					text-align: center
+			p
+				font-size: 1.6rem
+				line-height: 2
+				font-weight: 400
+		&_img
+			display: none
+	.service
+		&_info
+			width: 100%
+			padding: 0 3rem
+			margin-bottom: 5rem
+		&_item
+			margin: 3rem 0
+	.price
+		&_info
+			width: 100%
+			padding: 0 3rem
+			margin-bottom: 5rem
+	.portfolio
+		&_info
+			width: 100%
+			padding: 0 3rem
+			margin-bottom: 5rem
+	.footer
+		text-align: center
+		p
+			margin: 2rem auto
+			font-size: 2rem
+	.portfolio
+		text-align: center
+
+@media(max-width: 575.98px)
+	.header
+		&_nav
+			text-align: center
+			margin-top: 3rem
+			ul
+				padding: 0
+				justify-content: center
+				li
+					margin-right: 2rem
+					padding: 0
+					&:last-child
+						margin-right: 0
+					a
+						font-size: 14px
+		&_logo
+			display: block
+			margin: 5px auto
+			text-align: center
+		&_main
+			padding-top: 7rem
+			h1
+				font-size: 4rem
+				padding: 0 1rem
+				span
+					font-size: 4rem
+			p
+				padding: 0 2rem
+	.became
+		&_button
+			width: 200px
+		h2
+			font-size: 2.5rem
+			padding: 0 1rem
+	.share_all
+		text-align: center
+		h2
+			padding: 0 1rem
+			&::after
+				margin: 3.5rem auto
+		p
+			width: 100%
+			padding: 0 3rem
+
+
